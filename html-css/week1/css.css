@@ -22,7 +22,7 @@ text-align-last:center;
 ul.address{
 list-style-type:none;
 width: 60%;
-padding:0.2% 0% 0% 0.2%;
+padding:0.2% 0% 1% 0.2%;
 margin: 1% 1% 1% 1%;
 float: left;
 align-content: flex-end;
