@@ -20,6 +20,8 @@ text-align-last:center;
 }
 
 ul.address{
+padding:0% 1% 0% 1%;
+margin: 0% 1% 0% 1%;
 list-style-type:none;
 width: 60%;
 float: left;
