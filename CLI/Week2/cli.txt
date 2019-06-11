@@ -6,6 +6,7 @@ touch .HelloGitHub.txt
 To display it we write this 
 ls -a
 
+
 2. How to create multiple nested directories with one mkdir command?
 To do it write 'mkdir' then  '-p' then all path 'c/Users/unmesh/these/folders/are/just/for/fun.txt'
 exmple: mkdir -p c/Users/unmesh/these/folders/are/just/for/fun.txt
@@ -15,7 +16,7 @@ exmple: mkdir -p c/Users/unmesh/these/folders/are/just/for/fun.txt
     echo "another test" >> fun              : It will append this string to a file that has name 'fun' if file not exist it will create it
     wc -c fun                               : It will count characters in the file thart has name 'fun'
      //the output will be
-    '18'      chars    
+    18 fun
     
 4. To append something in the file.
 echo test > fun                             
@@ -27,5 +28,5 @@ another test
 
 How would you use echo command, so that output would be: 'testanother test'?
 The command will like this:   
-tr -d '\n' < fun.txt
+sed -i '$ s/$/another test/' fun
 
