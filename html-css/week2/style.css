@@ -1,8 +1,110 @@
-#grid-floats .grid-item {
-
-    margin: 10px;
-    padding: 10px;
-    background-color: blue;
-    width: 32%
-    
+/*reset page */
+*{
+    margin: 0px;
+    padding: 0px;
 }
+
+/*select each block that has a header, an img and a details */
+#grid-floats{
+    list-style-type: none;
+}
+
+#grid-floats li{
+    float:left;
+    background-color: rgba(146, 215, 243, 0.6);
+}
+
+#grid-floats li p{
+    font-family: 13px Verdana, Tahoma, sans-serif;
+    font-size: 0.7em;
+    color: #474E5D;
+}
+/*give the img width to be inside the parent*/
+#grid-floats .grid-item img{
+    width: 100%;
+}
+#grid-floats{
+    width: 100%;
+}
+
+@media (min-width:769px) and (max-width:1440px)
+{
+#grid-floats li{
+    /*display: inline-block;*/
+    width: 22.5%;
+    margin:  0.6%;
+    border: 1% solid lightcoral;
+    }
+    #grid-floats li:first-child
+    {
+        width: 46%;
+        margin: 0.3% 0.6%;
+    }
+    #grid-floats li:nth-child(2) p{
+        text-align: right;
+        direction: rtl;
+        font-family: Arial, Helvetica, sans-serif;
+         
+    }
+    #grid-floats li:nth-child(2),
+    #grid-floats li:nth-child(3){
+        width: 23%;
+        margin: 0.6%;
+    }
+    #grid-floats li:nth-child(4),
+    #grid-floats li:nth-child(8),
+    #grid-floats li:nth-child(12){
+        clear: both;
+    }
+}
+
+@media (min-width:426px) and (max-width:768px)
+{
+    #grid-floats li{
+        width: 30%;
+        margin: 0.3%;
+        border: 1% solid lightgoldenrodyellow;
+    }
+    #grid-floats li:first-child,
+    #grid-floats li:nth-child(2){
+        width: 46%;
+        margin: 0.6%;
+    }
+    #grid-floats li:nth-child(3),
+    #grid-floats li:nth-child(6),
+    #grid-floats li:nth-child(9),
+    #grid-floats li:nth-child(12){
+        clear: both;
+    }
+}
+@media (min-width:359px) and (max-width:425px)
+{
+    #grid-floats li{
+        width: 45%;
+        margin: 0.3%;
+        border: 1% solid lightpink;
+    }
+    #grid-floats li:first-child{
+        width: 93%;
+        margin: 0.6%;
+    }
+    #grid-floats li:nth-child(2),
+    #grid-floats li:nth-child(4),
+    #grid-floats li:nth-child(6),
+    #grid-floats li:nth-child(8),
+    #grid-floats li:nth-child(10),
+    #grid-floats li:nth-child(12),
+    #grid-floats li:nth-child(14){
+        clear: both;
+    }
+}
+/*to stop jumping header of second section to first section*/
+section h2{
+    /*display: inline-block;*/
+    clear: both
+}
+
+
+
+
+
