@@ -1,0 +1,42 @@
+
+1. create a directory. Enter a directory. Create an empty file named blank.
+saleh@LAPTOP-82E9LO9M MINGW64 ~/Desktop/GitWeek3 (master)
+$ mkdir week03
+
+saleh@LAPTOP-82E9LO9M MINGW64 ~/Desktop/GitWeek3 (master)
+$ cd week03
+
+saleh@LAPTOP-82E9LO9M MINGW64 ~/Desktop/GitWeek3/week03 (master)
+$ touch blank.txt
+
+2. Then write the content "Hello" five times to the file greetings.txt.
+   Then copy the file greetings.txt and paste its contents into 1.txt, 2.txt, 3.txt, 4.txt and 5.txt.
+saleh@LAPTOP-82E9LO9M MINGW64 ~/Desktop/GitWeek3/week03 (master)
+$ for i in {1..5}; do echo "Hello" >>greetings.txt; done
+$ for i in {1..5}; do cp greetings.txt $i.txt; done
+
+3. Then write the text "cat" to pets.txt
+   Then append the text "dog" to pets.txt
+   Then append the text "hamster" to pets.txt
+saleh@LAPTOP-82E9LO9M MINGW64 ~/Desktop/GitWeek3/week03 (master)
+$ echo "cat" > pets.txt
+saleh@LAPTOP-82E9LO9M MINGW64 ~/Desktop/GitWeek3/week03 (master)
+$ echo "dog" >> pets.txt
+saleh@LAPTOP-82E9LO9M MINGW64 ~/Desktop/GitWeek3/week03 (master)
+$ echo " hamster” >> pets.txt
+
+4. Then write the text "cat" to commands.txt
+   Then append the text "ls" to commands.txt
+   Then append the text "pwd" to commands.txt
+saleh@LAPTOP-82E9LO9M MINGW64 ~/Desktop/GitWeek3/week03 (master)
+$ echo "cat" > commands.txt
+saleh@LAPTOP-82E9LO9M MINGW64 ~/Desktop/GitWeek3/week03 (master)
+$ echo "ls" >> commands.txt
+saleh@LAPTOP-82E9LO9M MINGW64 ~/Desktop/GitWeek3/week03 (master)
+$ echo "pwd" > commands.txt
+
+5. Then find unique strings from these two files pets.txt and commands.txt and store the unique strings in lovelyCommands.txt
+saleh@LAPTOP-82E9LO9M MINGW64 ~/Desktop/GitWeek3/week03 (master)
+$ grep -F -x -v -f pets.txt commands.txt > lovelyCommands.txt
+
+
