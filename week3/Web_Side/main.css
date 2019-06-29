@@ -1,100 +1,116 @@
-body{/*reset page*/
-    margin-top:0%;/*delete space in the top of page*/
+body {
+  /*reset page*/
+  margin-top: 0%;
+  /*delete space in the top of page*/
 }
-body main header{
+
+body main header {
   margin: 0 2%;
 }
-nav{
-  position:fixed;
-  background-color:white;
+
+nav {
+  position: fixed;
+  background-color: white;
   width: 100%;
 }
 
-#vertical_space{/*this div to keep navbar in top of page It has positoin:fixed*/
+#vertical_space {
+  /*this div to keep navbar in top of page It has positoin:fixed*/
   height: 70px;
 }
 
-nav ul {
-  list-style-type: none;
-  /*width:85%;*/
-  display: flex;
-  flex-direction: row;
-  height:40px;
-  justify-content: flex-start;/*in same row*/
-  align-items:center; /*between top -- down*/
-  margin-bottom: 0%;
-}
-nav ul li a{
+
+nav ul li a {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  text-decoration: none;/*Remove Hyperlink Underline  */
+  text-decoration: none;
+  /*Remove Hyperlink Underline  */
 }
-nav ul li:nth-child(1)::before{
-  content:"";
-  padding-right:20px;
+
+nav ul li:nth-child(1)::before {
+  content: "";
+  padding-right: 20px;
 }
-nav ul li:nth-child(n+2)::after{
-  content:"|";
-  padding-right:10px;
-  padding-left:10px;
+
+nav ul li:nth-child(n+2)::after {
+  content: "|";
+  padding-right: 10px;
+  padding-left: 10px;
 }
-nav ul li:nth-child(14)::after{
-  content:"";
+
+nav ul li:nth-child(14)::after {
+  content: "";
 }
-#icons{/*it is for logo --> THE BOSTON  GLOBE*/
-  transform:translateX(45px);
-  transform:translateY(-409px);
-  fill:rgb(4, 23, 131);
+
+#icons {
+  /*it is for logo --> THE BOSTON  GLOBE*/
+  transform: translateX(45px);
+  transform: translateY(-409px);
+  fill: rgb(4, 23, 131);
 }
 
 /*move log B */
-nav li a svg{/*to put LOGO and all list nav in same row */
+nav li a svg {
+  /*to put LOGO and all list nav in same row */
   height: 1.7em;
-  width: 2.5em;
-  margin-top: 0.7em;/*align for log B*/
- }
-header svg{/*size of svg in  logo -->THE BOSTON  GLOBE */
-  height:79px;
-  width:50%;
+  width: 3.5em;
+  margin-top: 0.1em;
+  /*align for log B*/
 }
 
-#line_under_nav{
-  background-color:white;
+header svg {
+  /*size of svg in  logo -->THE BOSTON  GLOBE */
+  height: 79px;
+  width: 50%;
+}
+
+#line_under_nav {
+  background-color: white;
   border: 0.025em solid;
 }
-#line_under_header, #line_over_header{
-  background-color:white;
-    border: 0.001% solid;
-  margin:0% 2% 1% 0% ;
- }
-.trending{/*trending word in header*/
-color: #9e1511;
-font-weight: 800;
+
+#line_under_header,
+#line_over_header {
+  background-color: white;
+  border: 0.001% solid;
+  margin: 0% 2% 1% 0%;
 }
-  
-main header ul{
+
+.trending {
+  /*trending word in header*/
+  color: #9e1511;
+  font-weight: 800;
+}
+
+main header ul {
   margin: 0%;
-  list-style-type: none;/*delete point or number  in elements of list */
+  list-style-type: none;
+  /*delete point or number  in elements of list */
   display: flex;
   /*align-items:center; /*between top -- down*/
   flex-direction: row;
-  justify-content: flex-start;/*in same row*/
-}
-main ul li a{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-decoration: none;/*Remove Hyperlink Underline  */
-}
-#trendingList li:nth-child(2)::before{
-  content:"";
-  padding-left:30px;
+  justify-content: flex-start;
+  /*in same row*/
 }
 
-#trendingList li:nth-child(n+2)::after{
-  content:"|";
-  padding-right:10px;
-  padding-left:10px;
+main ul li a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+  /*Remove Hyperlink Underline  */
 }
-#trendingList li:nth-child(5)::after{
-  content:"";
+
+#trendingList li:nth-child(2)::before {
+  content: "";
+  padding-left: 30px;
+}
+
+#trendingList li:nth-child(n+2)::after {
+  content: "|";
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#trendingList li:nth-child(5)::after {
+  content: "";
 }
 
 /*finish header */
@@ -103,7 +119,7 @@ main ul li a{
 
 
 /*when we hover an anker link in aside became it gray color*/
-section li:nth-child(n+1) a:hover{
+section li:nth-child(n+1) a:hover {
   color: gray;
 }
 
@@ -114,233 +130,309 @@ p:nth-of-type(3n+0) {
 }*/
 
 /*start four sections*/
-section{
+section {
   margin: 0%;
 }
 
-section:nth-of-type(1){
+section:nth-of-type(1) {
   border-right: 0.07em solid black;
 }
-section:nth-of-type(1){
+
+section:nth-of-type(1) {
   font-size: 1em;
   /* background-color: antiquewhite;*/
   border-block: 1em;
 }
 
-section:nth-of-type(2){
- /* order:2;*/
- font-size: 1.1em;
- /* background-color: rgb(227, 243, 242);*/
+section:nth-of-type(2) {
+  /* order:2;*/
+  font-size: 1.1em;
+  /* background-color: rgb(227, 243, 242);*/
 
 }
 
-section:nth-of-type(3){
+section:nth-of-type(3) {
   /*order:4;*/
-  font-family:'Arial Narrow Bold', sans-serif;
+  font-family: 'Arial Narrow Bold', sans-serif;
   font-size: 0.7em;
 
 }
-section:nth-of-type(3) a article{
+
+section:nth-of-type(3) a article {
   margin-bottom: 10%;
-  flex:1 0 auto;
+  flex: 1 0 auto;
 }
+
 /*section 4*/
-section:nth-of-type(4){
- /* order:3;*/
+section:nth-of-type(4) {
+  /* order:3;*/
   background-color: #f3f2f1;
-  width:20%;
+  width: 20%;
   font-size: 0.9em;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- 
- /* background-color: rgb(239, 198, 243);*/
-  
+
+  /* background-color: rgb(239, 198, 243);*/
+
 }
+
 /*Remove Hyperlink Underline  */
-section:nth-of-type(4) h3{
+section:nth-of-type(4) h3 {
   padding: 3% 0 0 4%;
   font-size: 1em;
   color: #9e1511;
   font-weight: 700;
-  }
+}
 
-  section:nth-of-type(4) #doubleLine{
+section:nth-of-type(4) #doubleLine {
   border-style: solid;
-  width:90%;
+  width: 90%;
   border-width: 0.2em;
-  }
-  section hr{/*style for lines between articles*/
-    margin: 3% 6% 4% 3%;
-    width:92%;
-    border: 0;
-    color:black;
-    background-color: black;
-    height: 0.07em;
-    }
-    /*coloring numbers in order list*/
-    section:nth-of-type(4) ol {/*delete num*/
-    list-style: none;
-    counter-reset: li;
-    }
-    section:nth-of-type(4) ol li::before {
-    content: counter(li);
-     color: red;
-    display: inline-block; 
-    width: 1em;
-    counter-increment: li;/*to incement num in li*/
-    margin-left: -1.5em;/*get back space for num*/
-    margin-right: 0.5em;
-    text-align: right;
-    direction: rtl;/*align */
-    }
+}
+
+section hr {
+  /*style for lines between articles*/
+  margin: 3% 6% 4% 3%;
+  width: 92%;
+  border: 0;
+  color: black;
+  background-color: black;
+  height: 0.07em;
+}
+
+/*coloring numbers in order list*/
+section:nth-of-type(4) ol {
+  /*delete num*/
+  list-style: none;
+  counter-reset: li;
+}
+
+section:nth-of-type(4) ol li::before {
+  content: counter(li);
+  color: red;
+  display: inline-block;
+  width: 1em;
+  counter-increment: li;
+  /*to incement num in li*/
+  margin-left: -1.5em;
+  /*get back space for num*/
+  margin-right: 0.5em;
+  text-align: right;
+  direction: rtl;
+  /*align */
+}
+
 /*finish coloring oeder num- in list*/
 
 /*when we hover an in any section article became it gray color*/
-section:nth-of-type(n+1) a article:hover{
+section:nth-of-type(n+1) a article:hover {
   color: gray;
 }
 
-section img, p, h2{
-width: 95%;
-margin:0% 3%;
+section img,
+p,
+h2 {
+  width: 95%;
+  margin: 0% 3%;
 }
 
-section a{
+section a {
   text-decoration: none;
   color: black;
   margin: 0%;
   padding: 0%;
 }
 
-section:nth-of-type(1) .titleArt{/*change color title setion1*/
-color: rgb(47, 173, 247);
-font-weight: 800;
-margin-bottom: 3%;
+section:nth-of-type(1) .titleArt {
+  /*change color title setion1*/
+  color: rgb(47, 173, 247);
+  font-weight: 800;
+  margin-bottom: 3%;
 }
 
 section:nth-of-type(1) {
 
-  border-right :0.01em s5olid black;
+  border-right: 0.01em s5olid black;
 }
-footer div{
+
+footer div {
   margin: 1% 0% 3% 0%;
   text-align: center;
 }
 
-container{
-  display: flex;/*all sections flex as row*/
+container {
+  display: flex;
+  /*all sections flex as row*/
   align-content: flex-start;
   flex-wrap: wrap;
- flex-direction: row;
-  width:100%;
+  flex-direction: row;
+  width: 100%;
 }
-@media  (max-width:639px)/*iPad 2 sections*/
-{
- 
-  section:nth-of-type(n+1){
-    flex:1 1 auto; /*flex --> grow skrink based*/
-    order:1;
-    width:90%;
+
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  justify-items: flex-start;
+  /*in same row*/
+  align-items: flex-start;
+  /*between top -- down*/
+  margin-bottom: 0%;
+}
+
+@media (max-width:639px)
+
+/*iPad 2 sections*/
+  {
+  nav ul li:nth-child(n+1)::after {
+    /*delete this icon '|' from nav words */
+    content: " ";
+  }
+
+  #vertical_space {
+    /*this div to keep navbar in top of page It has positoin:fixed*/
+    height: 450px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /*in same row*/
+    margin-bottom: 0%;
+  }
+
+  nav ul:nth-child(n+1) li {
+    /*add space beteen word in drop down list*/
+    margin-bottom: 8%;
+  }
+
+  section:nth-of-type(n+1) {
+    flex: 1 1 auto;
+    /*flex --> grow skrink based*/
+    order: 1;
   }
 
 }
+
 /*for media */
-@media (min-width:640px) and (max-width:931px)/*iPad 2 sections*/
-{
-  
-  section:nth-of-type(1){
-    flex:1 1 auto; /*flex --> grow skrink based*/
-    order:1;
-    width:47%;
+@media (min-width:640px) and (max-width:931px)
+
+/*iPad 2 sections*/
+  {
+  section:nth-of-type(1) {
+    flex: 1 1 auto;
+    /*flex --> grow skrink based*/
+    order: 1;
+    width: 47%;
   }
-  
-  section:nth-of-type(2){
-    order:2;
-    flex:1 1 auto;
-    width:47%;
+
+  section:nth-of-type(2) {
+    order: 2;
+    flex: 1 1 auto;
+    width: 47%;
   }
-  
-  section:nth-of-type(3){
+
+  section:nth-of-type(3) {
     margin-top: 10%;
-    order:3;
-    flex:1 1 auto; /*to display child grow shrink*/
-   display: flex;/*all sections flex as wrap*/
-   /*here I use it to do flex to the content of section -- Nested flex*/
-  align-content: flex-start;
-   flex-wrap: wrap;
-  flex-direction: row;
-   width:100%;
+    order: 3;
+    flex: 1 1 auto;
+    /*to display child grow shrink*/
+    display: flex;
+    /*all sections flex as wrap*/
+    /*here I use it to do flex to the content of section -- Nested flex*/
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
   }
+
   /*I give width for each element of this up therd section*/
-  section:nth-of-type(3) a{/*display in flex row */
-    width:25%;
+  section:nth-of-type(3) a {
+    /*display in flex row */
+    width: 25%;
   }
-  section:nth-of-type(4){
+
+  section:nth-of-type(4) {
     margin-top: 10%;
-    order:4;
-    width:50%;
+    order: 4;
+    width: 50%;
   }
 }
 
-@media (min-width:932px) and (max-width:1189px)/*iPad 3 sections*/
-{
-  
-  
-  section:nth-of-type(1){
-    flex:1 1 auto; /*flex --> grow skrink based*/
-    order:1;
-    width:30%;
+@media (min-width:932px) and (max-width:1189px)
+
+/*iPad 3 sections*/
+  {
+
+  section:nth-of-type(1) {
+    flex: 1 1 auto;
+    /*flex --> grow skrink based*/
+    order: 1;
+    width: 30%;
   }
-  
-  section:nth-of-type(2){
-    order:2;
-    flex:1 1 auto;
-    width:40%;
+
+  section:nth-of-type(2) {
+    order: 2;
+    flex: 1 1 auto;
+    width: 40%;
   }
-  
-  section:nth-of-type(3){
+
+  section:nth-of-type(3) {
     margin-top: 10%;
-    order:4;
-   flex:1 1 auto;
-   display: flex;/*all sections flex as row*/
-   /*here I use it to do flex to the content of section -- Nested flex*/
-  align-content: flex-start;
-   flex-wrap: wrap;
-  flex-direction: row;
-   width:100%;
+    order: 4;
+    flex: 1 1 auto;
+    display: flex;
+    /*all sections flex as row*/
+    /*here I use it to do flex to the content of section -- Nested flex*/
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
   }
+
   /*I give width for each element of this up therd section*/
-  section:nth-of-type(3) a{
-    width:20%;
+  section:nth-of-type(3) a {
+    width: 20%;
   }
-  section:nth-of-type(4){
-    order:3;
-    flex:1 1 auto;
-    width:27%;
+
+  section:nth-of-type(4) {
+    order: 3;
+    flex: 1 1 auto;
+    width: 27%;
   }
-}/* end iPad */
-
-@media (min-width:1190px) /*desk-top pc display 4 sections */
-{
-
-
-section:nth-of-type(1){
-  flex:1 1 auto;/* flex --> grow skrink based*/
-  width:20%;
 }
 
-section:nth-of-type(2){
-  flex:1 1 auto;
-  width:40%;
-}
+/* end iPad */
 
-section:nth-of-type(3){
-  flex:1 1 auto;
-  width:15%;
-}
+@media (min-width:1190px)
 
-section:nth-of-type(4){
-  flex:1 1 auto;
-  width:20%;
-}
+/*desk-top pc display 4 sections */
+  {
 
+
+  section:nth-of-type(1) {
+    flex: 1 1 auto;
+    /* flex --> grow skrink based*/
+    width: 20%;
+  }
+
+  section:nth-of-type(2) {
+    flex: 1 1 auto;
+    width: 40%;
+  }
+
+  section:nth-of-type(3) {
+    flex: 1 1 auto;
+    width: 15%;
+  }
+
+  section:nth-of-type(4) {
+    flex: 1 1 auto;
+    width: 20%;
+  }
 }
