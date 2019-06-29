@@ -1,0 +1,228 @@
+/*reset page */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*select each block that has a header, an img and a details */
+#grid-floats {
+    list-style-type: none;
+}
+
+#grid-floats li{
+    float:left;
+   border: 1% solid #0ff;
+}
+
+#grid-floats li p{
+    font-family: 13px Verdana, Tahoma, sans-serif;
+    font-size: 1em;
+    color: #474E5D;
+    margin: 0.2% 1% 1% 2%;
+}
+
+/*give the img width to be inside the parent*/
+#grid-floats .grid-item img{
+    width: 100%;
+}
+
+section h2{
+    /*display: inline-block;*/
+    clear: both
+}
+section h3{
+    /*display: inline-block;*/
+   color: #2592eb;
+}
+@media (max-width:425px)
+{
+    #grid-floats li{
+        width: 49.4%;
+        margin: 0.3%;
+        border: 1% solid lightpink;
+    }
+    #grid-floats li:first-child{
+        width: 98.8%;
+        margin: 0.6%;
+    }
+    /*
+    #grid-floats li:nth-child(2),
+    #grid-floats li:nth-child(4),
+    #grid-floats li:nth-child(6),
+    #grid-floats li:nth-child(8),
+    #grid-floats li:nth-child(10),
+    #grid-floats li:nth-child(12),
+    #grid-floats li:nth-child(14){
+        clear: both;
+    }
+    */
+    #grid-floats li:nth-child(2n+2){
+        clear: both;
+    }
+}
+/*to stop jumping header of second section to first section*/
+
+@media (min-width:426px) and (max-width:768px)/*iPad */
+{
+    #grid-floats li{
+        width: 32.7%;
+        margin: 0.3%;
+        border: 1% solid rgb(164, 242, 245);
+    }
+    #grid-floats li:nth-child(1),
+    #grid-floats li:nth-child(2){
+        width: 48.8%;
+        margin: 0.6%;
+    }
+    /*
+    #grid-floats li:nth-child(3),
+    #grid-floats li:nth-child(6),
+    #grid-floats li:nth-child(9),
+    #grid-floats li:nth-child(12){
+        clear: both;
+    }*/
+    #grid-floats li:nth-child(3n+3){
+        clear: both;
+    }
+}/*iPad */
+
+@media (min-width:769px) /*desk-top pc */
+{
+#grid-floats li{
+    /*display: inline-block;*/
+    width: 23.5%;
+    margin:  0.6%;
+    }
+    #grid-floats li:first-child
+    {
+        width: 46%;
+        margin: 0.6% 0.6%;
+    }/*arabic direction font & style */
+    #grid-floats li:nth-child(2) p{
+        text-align: right;
+        direction: rtl;
+        font-family: Arial, Helvetica, sans-serif;
+       
+    }
+    /*
+    #grid-floats li:nth-child(2),
+    #grid-floats li:nth-child(3){
+        width: 23%;
+        margin: 0.6%;
+    }
+    */
+    #grid-floats li:nth-child(-2n+2){
+        width: 26%;
+        margin: 0.6%;
+    }
+    #grid-floats li:nth-child(4n+4){
+        clear: both;
+    }
+}/*desk-top pc */
+
+ /*Start flex way*/
+ 
+
+#grid-flex img{
+    width: 100%;
+}
+
+#grid-flex {
+    list-style-type: none;
+    display :flex;
+    flex-wrap: wrap;
+    background-color: rgba(225, 230, 233, 0.6);
+}
+#grid-flex li:nth-child(2) p{/*right to left font style*/
+    flex-direction: rtl;
+    text-align: right;
+}
+
+#grid-flex p{
+    font-family: 13px Verdana, Tahoma, sans-serif;
+    font-size: 1em;
+    margin: 0 1% 1% 1%;
+    color:rgb(38, 38, 245);
+}
+#grid-flex li{
+background-color: rgb(241, 240, 238);
+}
+@media (max-width:425px)/*mobile */
+{
+    #grid-flex li:first-child{
+        order:-1;
+        margin: 0.6%;
+        flex: 1 98%;
+    }
+  
+    #grid-flex li{
+        order:1;
+        flex: 1 0 auto;
+        margin: 0.6%;
+      
+        border: 1% solid rgb(129, 231, 209);
+    }
+    #grid-flex li:last-child{
+        order:2;
+        margin: 0.6%;
+        flex:0 1 auto;
+    }
+}/*mobile */
+
+@media (min-width:426px) and (max-width:768px)/*iPad */
+{
+    #grid-flex li:first-child,
+    #grid-flex li:nth-child(2){
+        order:-1;
+        flex: 1 1 auto;
+        margin: 0.6%;
+        border: 1% solid lightgoldenrodyellow;
+    }
+    #grid-flex li{
+        background: rgb(251, 244, 253);
+        border: 1% solid rgb(129, 231, 209);
+        width: 32%;
+        margin: 0.6%;
+        border: 1% solid lightgoldenrodyellow;
+    }
+    #grid-flex li:last-child{
+        order:2;
+        flex: 1 0 0 auto;
+    }
+}/*iPad */
+
+@media (min-width:769px) /*desk-top pc */
+{
+#grid-flex li{
+    /*display: inline-block;*/
+    width: 23.5%;
+    margin: 0.6% ;
+    }
+
+    #grid-flex li:nth-child(1) {
+        order:0;
+      /*  flex: 0 1 1 27%;*/
+    }/*arabic direction font & style */
+
+    #grid-flex li:nth-child(2){
+        order:1;
+        /*flex:  0 1 27%;*/
+    }
+    #grid-flex li:nth-child(3){
+        order:2;
+        flex: 1 1 auto;
+    }
+    #grid-flex li:nth-child(2) p{/*arabic style*/
+        text-align: right;
+        direction: rtl;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #grid-flex li{
+        order:3;
+        width: 24%;
+        border: salmon ;
+        /*background: rgba(226, 184, 67,40);*/
+        margin: 0.5% ;
+    }
+ }/*desk-top pc */
+
