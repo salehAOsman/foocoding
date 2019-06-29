@@ -8,39 +8,56 @@
     <link rel="stylesheet" href="main.css">
     <title>my page</title>
     <link rel="icon" type="image/png" href="" />
+    <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
 
 <body>
+
+    <!--Hoverable Dropdown-->
+
     <!-- no head-->
     <main>
         <!--no footer-->
         <nav>
-            <ul>
-                <li><a>
-                        <svg>
-                            <a xlink:href="https://www.bostonglobe.com/?p1=BGHeader_Logo">
-                                <path
-                                    d="M15.314 10.916l-.068 4.873c-.507.27-.845.44-1.32.777-.372-.236-.744-.474-1.184-.745V9.528l2.572 1.388zm.373-4.232c0 .744-.677 1.117-2.945 2.54v-2.17c0-1.082.068-1.69.1-2.132h-.472c.067.474.102 1.05.102 2.133v8.633c-1.423-.848-3.15-1.728-4.977-1.863 1.727-.982 3.452-2.302 3.452-4.233v-4.23c0-1.354.542-2.167 1.964-3.385a61.06 61.06 0 0 1 2.44 3.858c.203.338.34.677.34.846l-.003.004zm-4.434-5.28l-.068-.204c-1.422 0-2.2-.17-2.946-.304C7.53.794 6.92.658 6.072.658c-2.235 0-3.69 1.152-3.69 3.013 0 .78.168 1.22.676 1.797l.202-.203c-.27-.34-.405-.678-.405-1.05 0-.812.676-1.523 2.165-1.523 1.118 0 2.133.204 3.013.407C6.14 4.483 4.99 5.5 4.99 8.444c-.272-.102-.644-.17-1.152-.17-1.42 0-2.166.95-2.166 1.862 0 .407.1.848.373 1.152l.237-.135c-.102-.204-.17-.407-.17-.61 0-.61.474-1.083 1.354-1.083.78 0 1.354.338 1.624.813 0 2.064-.405 3.114-1.488 3.114v.236c1.624 0 3.588-1.184 3.588-3.08v-3.79c0-3.116 1.828-4.57 4.063-5.35zm7.075 8.563L15.314 7.97c1.15-.71 1.524-.914 1.93-1.218.71-.508.914-.813.914-1.117 0-.238-.1-.677-.643-1.49-.677-1.016-1.32-1.997-2.674-3.892-1.894 1.286-2.943 2.063-4.94 3.622A3.707 3.707 0 0 0 8.48 6.82c0 .44.034 2.707.034 4.196 0 1.15-.202 1.76-1.42 2.775-2.945 0-4.706 1.898-4.706 3.793 0 .813.27 1.66.88 2.335l.204-.204a2.693 2.693 0 0 1-.677-1.793c0-1.016.746-2.133 3.08-2.133 2.574 0 4.977 1.76 6.365 2.607 1.997-1.693 3.25-2.404 5.822-3.252v-4.298c0-.304.1-.608.27-.88l-.002.003z">
-                                </path>
-                            </a>
-                        </svg></a>
-                </li>
-                <li><a href="https://www.bostonglobe.com/metro/">METRO</a></li>
-                <li><a href="https://www.bostonglobe.com/sports/">SPORTS</a></li>
-                <li><a href="https://www.bostonglobe.com/business/">BUSSINESS</a></li>
-                <li><a href="https://www.bostonglobe.com/opinion/">OPINION</a></li>
-                <li><a href="https://www.bostonglobe.com/metro/new-england/rhode-island/">RHODE&nbsp&nbspISLAND</a></li>
-                <li><a href="https://www.bostonglobe.com/nation/politics/">POLITICS</a></li>
-                <li><a href="https://www.bostonglobe.com/lifestyle/">LIFSTYLE</a></li>
-                <li><a href="https://www.bostonglobe.com/marijuana/">MARIJUANA</a></li>
-                <li><a href="https://www.bostonglobe.com/arts/">ARTS</a></li>
-                <li><a href="https://www.bostonglobe.com/magazine/">MAGAZINE</a></li>
-                <li><a href="https://www.boston.com/section/cars/">CARS</a></li>
-                <li><a href="http://realestate.boston.com/">REALE_STATE</a></li>
-                <li><a href="https://globeevents.splashthat.com/">EVENTS</a></li>
-                <!--<li><a class="about" href="#about">About</a></li> format right side  -->
-            </ul>
 
+            <!--icon from FontAwesome-->
+            <div class="dropdown">
+                <span> <a class="btn btn-primary" href="#navigation-main" aria-label="Skip to main navigation">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </a></span>
+                <!--icon from FontAwesome-->
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a>
+                                <svg>
+                                    <a xlink:href="https://www.bostonglobe.com/?p1=BGHeader_Logo">
+                                        <path
+                                            d="M15.314 10.916l-.068 4.873c-.507.27-.845.44-1.32.777-.372-.236-.744-.474-1.184-.745V9.528l2.572 1.388zm.373-4.232c0 .744-.677 1.117-2.945 2.54v-2.17c0-1.082.068-1.69.1-2.132h-.472c.067.474.102 1.05.102 2.133v8.633c-1.423-.848-3.15-1.728-4.977-1.863 1.727-.982 3.452-2.302 3.452-4.233v-4.23c0-1.354.542-2.167 1.964-3.385a61.06 61.06 0 0 1 2.44 3.858c.203.338.34.677.34.846l-.003.004zm-4.434-5.28l-.068-.204c-1.422 0-2.2-.17-2.946-.304C7.53.794 6.92.658 6.072.658c-2.235 0-3.69 1.152-3.69 3.013 0 .78.168 1.22.676 1.797l.202-.203c-.27-.34-.405-.678-.405-1.05 0-.812.676-1.523 2.165-1.523 1.118 0 2.133.204 3.013.407C6.14 4.483 4.99 5.5 4.99 8.444c-.272-.102-.644-.17-1.152-.17-1.42 0-2.166.95-2.166 1.862 0 .407.1.848.373 1.152l.237-.135c-.102-.204-.17-.407-.17-.61 0-.61.474-1.083 1.354-1.083.78 0 1.354.338 1.624.813 0 2.064-.405 3.114-1.488 3.114v.236c1.624 0 3.588-1.184 3.588-3.08v-3.79c0-3.116 1.828-4.57 4.063-5.35zm7.075 8.563L15.314 7.97c1.15-.71 1.524-.914 1.93-1.218.71-.508.914-.813.914-1.117 0-.238-.1-.677-.643-1.49-.677-1.016-1.32-1.997-2.674-3.892-1.894 1.286-2.943 2.063-4.94 3.622A3.707 3.707 0 0 0 8.48 6.82c0 .44.034 2.707.034 4.196 0 1.15-.202 1.76-1.42 2.775-2.945 0-4.706 1.898-4.706 3.793 0 .813.27 1.66.88 2.335l.204-.204a2.693 2.693 0 0 1-.677-1.793c0-1.016.746-2.133 3.08-2.133 2.574 0 4.977 1.76 6.365 2.607 1.997-1.693 3.25-2.404 5.822-3.252v-4.298c0-.304.1-.608.27-.88l-.002.003z">
+                                        </path>
+                                    </a>
+                                </svg></a>
+                        </li>
+                        <li><a href="https://www.bostonglobe.com/metro/">METRO</a></li>
+                        <li><a href="https://www.bostonglobe.com/sports/">SPORTS</a></li>
+                        <li><a href="https://www.bostonglobe.com/business/">BUSSINESS</a></li>
+                        <li><a href="https://www.bostonglobe.com/opinion/">OPINION</a></li>
+                        <li><a
+                                href="https://www.bostonglobe.com/metro/new-england/rhode-island/">RHODE&nbsp&nbspISLAND</a>
+                        </li>
+                        <li><a href="https://www.bostonglobe.com/nation/politics/">POLITICS</a></li>
+                        <li><a href="https://www.bostonglobe.com/lifestyle/">LIFSTYLE</a></li>
+                        <li><a href="https://www.bostonglobe.com/marijuana/">MARIJUANA</a></li>
+                        <li><a href="https://www.bostonglobe.com/arts/">ARTS</a></li>
+                        <li><a href="https://www.bostonglobe.com/magazine/">MAGAZINE</a></li>
+                        <li><a href="https://www.boston.com/section/cars/">CARS</a></li>
+                        <li><a href="http://realestate.boston.com/">REALE_STATE</a></li>
+                        <li><a href="https://globeevents.splashthat.com/">EVENTS</a></li>
+                        <!--<li><a class="about" href="#about">About</a></li> format right side  -->
+                    </ul>
+                </div>
+            </div>
             <hr id="line_under_nav">
         </nav>
         <div id="vertical_space">&nbsp</div>
@@ -57,6 +74,7 @@
             </svg>
 
             <hr id="line_over_header">
+
             <ul id="trendingList">
                 <li><a class="trending">TRENDING:</a></li>
                 <li><a
@@ -98,7 +116,7 @@
                     </article>
                 </a>
 
-                <hr >
+                <hr>
                 <a
                     href="https://www.bostonglobe.com/news/nation/2019/06/28/white-supremacist-sentenced-life-prison-for-deadly-car-attack-charlottesville/Uosnt2oVWELdHgFEofgQIK/story.html">
                     <article id="art3">
@@ -110,13 +128,14 @@
                 <hr>
                 <a
                     href="https://www.bostonglobe.com/metro/2019/06/28/dogs-seized-animal-cruelty-investigation-auburn/AQrGF9l1taC0VdfjQtYngO/story.html">
-                <article id="art4">
-                    <h2>11 dogs seized in animal cruelty investigation in Auburn</h2>
-                    <p>It is unclear what conditions the dogs were previously living in, or when they will be available
-                        for adoption. </p>
-                </article>
+                    <article id="art4">
+                        <h2>11 dogs seized in animal cruelty investigation in Auburn</h2>
+                        <p>It is unclear what conditions the dogs were previously living in, or when they will be
+                            available
+                            for adoption. </p>
+                    </article>
                 </a>
-                <hr >
+                <hr>
                 <a
                     href="https://www.bostonglobe.com/news/world/2019/06/28/trump-jokes-putin-don-meddle-election/IIFiFGRckA5qpR8zkilE2J/story.html">
                     <article id="art5">
@@ -124,7 +143,7 @@
                         <p></p>
                     </article>
                 </a>
-                <hr >
+                <hr>
                 <a
                     href="https://www.bostonglobe.com/metro/2019/06/28/another-varsity-blues-defendant-pleads-guilty/8WZrfigrnOeK5hQhQn1OwI/story.html">
 
@@ -133,7 +152,7 @@
                         <p></p>
                     </article>
                 </a>
-                
+
             </section>
             <section id="sec2">
                 <a
@@ -147,7 +166,7 @@
                             beyond the party’s most politically active members to a broader electorate.</p>
                     </article>
                 </a>
-                <hr >
+                <hr>
                 <a href="https://www.latimes.com/politics/la-na-pol-2020-democratic-debate-miami-20190627-story.html">
                     <img src="images/sec2Biden.jpg" alt="img3">
                     <article id="art2">
@@ -159,7 +178,7 @@
                         </p>
                     </article>
                 </a>
-                <hr >
+                <hr>
 
                 <a
                     href="https://www.bostonglobe.com/lifestyle/food-dining/2019/06/28/everything-you-need-know-about-eating-new-time-out-market-boston/ksg6zfYUNwxvBg6Zf9tSLJ/story.html">
@@ -170,7 +189,7 @@
                         </p>
                     </article>
                 </a>
-                <hr >
+                <hr>
                 <a
                     href="https://www.bostonglobe.com/sports/redsox/2019/06/28/what-heck-happening-with-mookie-betts/mNY4wzlcKCLJLarqqGqb9H/story.html">
                     <img src="images/sec2Mookie.jpg" alt="img3">
@@ -183,50 +202,51 @@
             </section>
 
             <section id="sec3">
-                <h2 class="trending" > OPINION</h2><br>
+                <h2 class="trending"> OPINION</h2><br>
                 <a
                     href="https://www.boston.com/cars/car-reviews/2019/06/26/all-new-2020-hyundai-palisade-offers-affordable-upscale-for-8-passengers">
                     <article id="art1">
-                         <img src="images/sec3hunday.jpg" border="0" alt="sec3hunday">
+                        <img src="images/sec3hunday.jpg" border="0" alt="sec3hunday">
                         <h2>All-new 2020 Hyundai Palisade offers affordable upscale for 8 passengers</h2>
-                       
+
                     </article>
                 </a>
-              
+
                 <a href="https://www.bostonglobe.com/opinion/ideas/?p1=HP_TrendingBar">
                     <article id="art2">
                         <img src="images/sec3Chernobyl.jpg" alt="sec3Chernobyl">
                         <h2>Chernobyl reminds us of the tragic cost of lies</h2>
-                        
+
                     </article>
                 </a>
-              
+
                 <a
                     href="https://www.latimes.com/politics/la-na-pol-dreamers-supreme-court-trump-immigration-20190628-story.html">
                     <article id="art3">
                         <img src="images/sec3Washington.jpg" alt="sec3Washington">
                         <h2>Trump vs. ‘Dreamers’: Supreme Court to decide on DACA during the election year</h2>
-                        
+
                     </article>
                 </a>
-               
+
 
                 <a
                     href="https://www.latimes.com/local/lanow/la-me-ln-nipsey-hussle-eric-holder-murder-transcripts-20190627-story.html">
                     <article id="art4">
                         <img src="images/sec3Nispey.jpg" alt="sec3Nispey">
-                        <h2>Nipsey Hussle told alleged gunman ‘You got me’ after being shot multiple times, kicked in head, records show</h2>
-                       
+                        <h2>Nipsey Hussle told alleged gunman ‘You got me’ after being shot multiple times, kicked in
+                            head, records show</h2>
+
                     </article>
                 </a>
-               
+
 
                 <a
                     href="https://www.latimes.com/business/hollywood/la-fi-ct-amc-theatres-artisan-films-blockbusters-20190627-story.html">
                     <article id="art5">
                         <img src="images/sec3movies.jpg" alt="sec3movies">
                         <h2>AMC Theatres launches program to make sure franchises don’t kill smaller movies</h2>
-                       
+
                     </article>
                 </a>
                 <a
@@ -236,29 +256,29 @@
                         <h2>Yes, The Apollo Moon Landings Really Did Happen</h2>
                     </article>
                 </a>
-               
 
-                
+
+
 
             </section>
 
             <section id="sec4">
                 <div id="MostRead">
-                    <h3 >MOST READ ON BOSTONGLOBE.COM</h3>
+                    <h3>MOST READ ON BOSTONGLOBE.COM</h3>
                     <hr id="doubleLine">
                     <ol>
                         <li><a
                                 href="https://www.bostonglobe.com/news/politics/2019/06/27/live-updates-the-second-democratic-primary-debate/it1mCOTeOxYeBXg0wvqFCL/story.html?p1=HP_Feed_ContentQuery">Live
                                 updates: The second Democratic primary debate</a> </li>
-                        <hr >
+                        <hr>
                         <li><a
                                 href="https://www.bostonglobe.com/metro/2019/06/27/made-huge-mistake-newton-man-needs-find-his-wife-bike-fast/6buox46gDBFFE9a3YVFWHP/story.html?p1=HP_Feed_ContentQuery">‘I
                                 made a huge mistake’: Newton man needs to find his wife’s bike, fast</a> </li>
-                        <hr >
+                        <hr>
                         <li><a
                                 href="https://www.bostonglobe.com/opinion/2019/06/28/the-big-debate-story-elizabeth-warren-wasn-big-story/M6X7zCdiYga6rj71IZ44ON/story.html?p1=HP_Feed_ContentQuery">The
                                 big debate story: Elizabeth Warren wasn’t the big story </a> </li>
-                        <hr >
+                        <hr>
                         <li><a
                                 href="https://www.bostonglobe.com/news/politics/2019/06/27/dem-debate-part-clash-front-runners/6v2fFeH0Ljn1oEK9U17bYK/story.html?p1=HP_Feed_ContentQuery">Fiery
                                 Democratic debate: Race, age, health care and Trump</a> </li>
@@ -284,42 +304,53 @@
             </section>
         </container>
     </main>
-    
-    <a href="#top">Top</a> <!--<a href="#bottom">Bottom</a> or to jump down -->
-    <hr >
+
+    <a href="#top">Top</a>
+    <!--<a href="#bottom">Bottom</a> or to jump down -->
+    <hr>
 
     <footer>
-        <div >
+        <div>
             <span>FOLLOW US: </span>
-            <a href="https://www.facebook.com/globe"  rel="noopener noreferrer" aria-label="Follow us on Facebook">
-              
-            <svg aria-labelledby="facebook-share-icon" width="24"  height="24" viewBox="0 0 264 512">
-                    <path d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229" fill="#005dc7" fill-rule="evenodd">
-                    </path>
-            </svg>
-            
+            <a href="https://www.facebook.com/globe" rel="noopener noreferrer" aria-label="Follow us on Facebook">
 
-            <a href="https://twitter.com/BostonGlobe" target="_tab" id="Follow us on Twitter" rel="noopener noreferrer" aria-label="Follow us on Twitter">
-            <svg aria-labelledby="twitter-share-icon" width="24" height="24" viewBox="0 0 512 512">
-                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" fill="#005dc7" fill-rule="evenodd">
+                <svg aria-labelledby="facebook-share-icon" width="24" height="24" viewBox="0 0 264 512">
+                    <path
+                        d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"
+                        fill="#005dc7" fill-rule="evenodd">
                     </path>
-            </svg>
+                </svg>
 
-          
-            <svg aria-labelledby="instagram-share-icon" width="24" height="24" viewBox="70 50 420 420">
-                <title id="instagram-share-icon">Share on Instagram</title>
-                <path d="M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z" fill="#005dc7" fill-rule="evenodd">
-                </path>
-                <path d="M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z" fill="#005dc7" fill-rule="evenodd">
-                </path>
-                <circle cx="351.5" cy="160.5" r="21.5" fill="#005dc7" fill-rule="evenodd"></circle></svg>
-            
-            <br>
-               
-            
-            </div>
+
+                <a href="https://twitter.com/BostonGlobe" target="_tab" id="Follow us on Twitter"
+                    rel="noopener noreferrer" aria-label="Follow us on Twitter">
+                    <svg aria-labelledby="twitter-share-icon" width="24" height="24" viewBox="0 0 512 512">
+                        <path
+                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                            fill="#005dc7" fill-rule="evenodd">
+                        </path>
+                    </svg>
+
+
+                    <svg aria-labelledby="instagram-share-icon" width="24" height="24" viewBox="70 50 420 420">
+                        <title id="instagram-share-icon">Share on Instagram</title>
+                        <path
+                            d="M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z"
+                            fill="#005dc7" fill-rule="evenodd">
+                        </path>
+                        <path
+                            d="M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z"
+                            fill="#005dc7" fill-rule="evenodd">
+                        </path>
+                        <circle cx="351.5" cy="160.5" r="21.5" fill="#005dc7" fill-rule="evenodd"></circle>
+                    </svg>
+
+                    <br>
+
+
+        </div>
     </footer>
 
 </body>
-</html>
 
+</html>

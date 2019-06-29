@@ -41,6 +41,9 @@ nav ul li:nth-child(14)::after {
   content: "";
 }
 
+
+
+
 #icons {
   /*it is for logo --> THE BOSTON  GLOBE*/
   transform: translateX(45px);
@@ -272,6 +275,7 @@ container {
 nav ul {
   list-style-type: none;
   display: flex;
+
   flex-direction: row;
   height: 30px;
   justify-items: flex-start;
@@ -280,11 +284,38 @@ nav ul {
   /*between top -- down*/
   margin-bottom: 0%;
 }
-
-@media (max-width:639px)
-
-/*iPad 2 sections*/
+#navtoggle{
+  display: inline;
+}
+@media (max-width:639px) /*iPad 2 sections*/
   {
+    /*Hoverable Dropdown for nav as colum in mobile case */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*end Hoverable Dropdown*/
+
+    /*hidden those items in mobile case */
+    header #trendingList,
+    header #line_over_header,
+    section:nth-of-type(4){
+      display:none;
+    }
   nav ul li:nth-child(n+1)::after {
     /*delete this icon '|' from nav words */
     content: " ";
@@ -292,14 +323,14 @@ nav ul {
 
   #vertical_space {
     /*this div to keep navbar in top of page It has positoin:fixed*/
-    height: 450px;
+    height:50px;
   }
 
   nav ul {
     list-style-type: none;
     height: 100%;
     width: 20%;
-    display: flex;
+   
     flex-direction: column;
     justify-content: flex-start;
     /*in same row*/
