@@ -25,6 +25,11 @@ nav ul li a {
   text-decoration: none;
   /*Remove Hyperlink Underline  */
 }
+/*position for menu*/
+#menu{
+position: relative;
+top:40px;
+}
 
 nav ul li:nth-child(1)::before {
   content: "";
@@ -40,9 +45,6 @@ nav ul li:nth-child(n+2)::after {
 nav ul li:nth-child(14)::after {
   content: "";
 }
-
-
-
 
 #icons {
   /*it is for logo --> THE BOSTON  GLOBE*/
@@ -208,7 +210,6 @@ section:nth-of-type(4) ol {
   list-style: none;
   counter-reset: li;
 }
-
 section:nth-of-type(4) ol li::before {
   content: counter(li);
   color: red;
@@ -289,6 +290,11 @@ nav ul {
 }
 @media (max-width:639px) /*iPad 2 sections*/
   {
+
+    #menu{
+      position: relative;
+      top:8px;
+      }
     /*Hoverable Dropdown for nav as colum in mobile case */
 .dropdown {
   position: relative;
