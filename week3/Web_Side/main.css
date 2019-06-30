@@ -50,9 +50,7 @@ nav ul li:nth-child(14)::after {
   transform: translateY(-409px);
   fill: rgb(4, 23, 131);
 }
-#menu{
- 
-}
+
 /*move log B */
 nav li a svg {
   /*to put LOGO and all list nav in same row */
