@@ -32,7 +32,7 @@ top:40px;
 }
 
 nav ul li:nth-child(1)::before {
-  content: "";
+ 
   padding-right: 20px;
 }
 
