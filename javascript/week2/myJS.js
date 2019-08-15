@@ -2,7 +2,6 @@ console.log("Hello World!"); //1.
 console.log("Ciao, mondo!");
 console.log("Hej Världen!"); 
 console.log("Bonjour le monde");
-
 console.log('I\'m awesum');//2. use / it means the next char is a string 
 
 let x;//3.
@@ -35,6 +34,7 @@ let zoo = ["Cat", "Hours", "Dog", "Fish", "Bird"];
 console.log(zoo);
 zoo.push("baby pig");
 console.log(zoo);
+
 
 let myString = "This is a test";//7. strings
 console.log(myString);
