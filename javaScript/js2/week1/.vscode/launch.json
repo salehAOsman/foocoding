@@ -4,6 +4,13 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch)",
+            "request": "launch",
+            "mainClass": ""
+        },
+   
     {
         "type": "java",
         "name": "Debug (Launch)",
@@ -21,10 +28,9 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}\\assigment.js"
-            //"program": "${workspaceFolder}\\myMap.js"
-
-           // "program": "${workspaceFolder}\\apps.js"
+            
+            "program": "${workspaceFolder}\\mapFilter.js"
+           
         }
     ]
 }
