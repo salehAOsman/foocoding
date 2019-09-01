@@ -9,4 +9,4 @@ function doubleOddNumbers(oldNums) {
 
 const myNumbers = [1, 2, 4, 5, 7];
 
-console.log(doubleOddNumbers(myNumbers)); // ==> [2, 6]
+console.log(doubleOddNumbers(myNumbers)); 
