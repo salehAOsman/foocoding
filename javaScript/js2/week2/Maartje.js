@@ -49,11 +49,8 @@ const monday = [
   const tasksInHour = tasks.map(t => t.duration / 60);
   console.log(tasksInHour);
 
- 
   const tasksBiggerThanTowHours=tasksInHour.filter(t=>t >= 2);
   console.log(tasksBiggerThanTowHours);
-
-
 
   const billings=tasksBiggerThanTowHours.map(billing=>billing * 20);
   console.log(billings);
