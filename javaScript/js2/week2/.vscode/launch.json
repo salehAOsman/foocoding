@@ -8,6 +8,13 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
+            "program": "${workspaceFolder}/squirtle-sprites.js"
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
             "program": "${workspaceFolder}/Maartje.js"
         },
         {
