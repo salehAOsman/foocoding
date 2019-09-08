@@ -1,12 +1,28 @@
 'use strict';
 
-function doubleOddNumbers(oldNums) {
-    const newNums = [];
-    oldNums.filter(x => x % 2 !== 0).map( x =>  newNums.push(x * 2) );
-    return newNums;
-    
+let foods = [{ 'name': 'drick', 'price': 200 },
+{ 'name': 'coffe', 'price': 600 }
+];
+
+function funcReduce( sum , item ) {
+    return sum + item.name;
 }
 
-const myNumbers = [1, 2, 4, 5, 7];
+let total = foods.reduce(funcReduce, 0 );
+
+console.log(total);
+
+function checkNumber(num) { //make logic to check num
+    return num % 2 != 0; } 
+
+function doubleNumber(num) {//make logic to check num
+    return num * 2;
+}
+
+function doubleOddNumbers(oldNums) {
+    return oldNums.filter(checkNumber).map(doubleNumber);
+}
+
+const myNumbers = [1, 2, 3, 4, 5, 6, 7];
 
 console.log(doubleOddNumbers(myNumbers)); 

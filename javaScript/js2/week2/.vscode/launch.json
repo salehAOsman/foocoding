@@ -8,27 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/squirtle-sprites.js"
-        },
-
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Launch Program",
             "program": "${workspaceFolder}/Maartje.js"
-        },
-        {
-            "type": "node",
-            "request": "attach",
-            "name": "Attach",
-            "port": 9229
-        },
-      
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}\\mapFilter.js"
         }
     ]
 }
