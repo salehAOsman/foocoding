@@ -1,12 +1,11 @@
 'use strict';
 
 function foo(func) {
-    console.log( "We say: "+func);
+    return "Hello"+func;
 }
 
 function bar() {
-  
-return  'Hello, I am bar!';
+  console.log('Hello, I am bar!');
 }
 
-foo(bar());
+foo(bar);
