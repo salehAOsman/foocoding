@@ -1,0 +1,14 @@
+body {background-color: powderblue;}
+.flex-container 
+{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+}
+  .flex-container > div 
+{
+    width:50%;
+    background-color: #f1f1f1;
+    margin: 10px;
+    text-align: center;
+}

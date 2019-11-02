@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Benjamin",
+                "last": "Rasmussen"
+            },
+            "location": {
+                "street": {
+                    "number": 9081,
+                    "name": "Ringvej"
+                },
+                "city": "Juelsminde",
+                "state": "Hovedstaden",
+                "country": "Denmark",
+                "postcode": 44603,
+                "coordinates": {
+                    "latitude": "-27.0113",
+                    "longitude": "-53.2587"
+                },
+                "timezone": {
+                    "offset": "-5:00",
+                    "description": "Eastern Time (US & Canada), Bogota, Lima"
+                }
+            },
+            "email": "Benjamin.Rasmussen@example.com",
+            "login": {
+                "uuid": "2e4ea556-1c3b-4841-94b0-9a7718fb1fbd",
+                "username": "sadbear656",
+                "password": "ddddd",
+                "salt": "gXmTIsfK",
+                "md5": "1bb38a9a777b555681300f1bfe5ed97b",
+                "sha1": "96e8faa4fb349b8f9e9d2b0f196b55142c86e343",
+                "sha256": "66a848f9948aeaa0b93b0da2ab8137c36e37b4ce045cf6dd2b39df3396bc538d"
+            },
+            "dob": {
+                "date": "1979-01-07T01:54:01.551Z",
+                "age": 40
+            },
+            "registered": {
+                "date": "2010-04-30T12:28:11.519Z",
+                "age": 9
+            },
+            "phone": "05960978",
+            "cell": "96373625",
+            "id": {
+                "name": "CPR",
+                "value": "070179-3190"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/47.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/47.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/47.jpg"
+            },
+            "nat": "DK"
+        }
+    ],
+    "info": {
+        "seed": "033a086c7e6389fa",
+        "results": 1,
+        "page": 1,
+        "version": "1.3"
+    }
+}
